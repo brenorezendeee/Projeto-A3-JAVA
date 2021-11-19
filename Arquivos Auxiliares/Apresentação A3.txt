@@ -1,0 +1,37 @@
+Etapas de Criação
+
+1 - Importante falar sobre o banco de dados
+	Tabelas
+	
+	Dinamica entre o banco e o Java	
+	1º Conecta no banco de dados
+	2º Executa o comando SQL
+	3º Encerra a conexão
+	
+
+2 - Criação dos Packages
+	Importante informar que estamos seguindo o padrão br.com.projeto.view => País, formato do software, projeto, nome do package
+	Importante informar sobre o pacote jdbc para conexão com o banco
+	
+3 - Criação das views
+	Importante detalhar a utilização dos campos
+	Importante falar sobre os campos formatados
+
+4 - Criação da Classe Clientes
+	Não foi necessário metodos porque o trabalho do model é apenas encapsular os dados do view para enviar para o BD
+	
+	
+	
+	
+Informações
+	O Connection é uma classe que está dentro da biblioteca MYSQL.
+	Para se conectar no banco, o java precisa receber de onde, qual banco e qual usuário ele vai se conectar
+	Para cada tabela no banco de dados vai ter uma classe DAO par aorganização do código
+	O metodo cadastrar vai cadastrar um objeto da camada modelo (Objetos empacotados do modelo)
+	Tudo será programado no construtor será executado quando se instancia um objeto Ex.: ClientesDAO dao = new ClienteDAO();
+	Todo select realizado no banco retorna uma lista e essa lista deve ser guardada dentro do array no java
+	Toda vez que usar o select tem que criar o objto do result set
+	
+	Os dados que são exibidos na tabela devem estar dentro de um DefaultTableModel quase igual o metodo listar que retorna uma lista
+	Quando carrega o formulário ele preenche as informações
+	
